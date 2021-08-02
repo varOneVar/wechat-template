@@ -1,0 +1,7 @@
+/* components/zUserInfoBtn/zUserInfoBtn.wxss */
+.btn {
+  border: none;
+}
+.btn::after {
+  border: none;
+}

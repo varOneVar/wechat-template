@@ -1,0 +1,15 @@
+<!--components/zDialog/zDialog.wxml-->
+<!-- 弹窗 -->
+<view wx:if="{{show}}" class="custom-mask" style="z-index: {{zIndex}};" catchtap="stopHandler">
+  <view class="mask-inner">
+    <view class="contianer {{type}}">
+      <slot></slot>
+    </view>
+    <image
+      class="close"
+      src="../../assets/close.png"
+      mode="aspectFill"
+      catchtap="closeHandler"
+    />
+  </view>
+</view>

@@ -1,0 +1,56 @@
+/* components/zDialog/zDialog.wxss */
+.custom-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  transition: opacity 0.5s ease;
+  z-index: 2000;
+}
+
+.g_scale0 {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.g_scale1 {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.mask-inner {
+  flex: 1;
+  padding: 0 24rpx;
+  text-align: center;
+}
+
+.contianer {
+  text-align: left;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 8px;
+  animation-duration: 0.3s;
+  animation-name: slidein;
+}
+.contianer.big {
+  display: block;
+}
+
+@keyframes slidein {
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close {
+  display: block;
+  width: 64rpx;
+  height: 64rpx;
+  margin: 32rpx auto 0;
+}

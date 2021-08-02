@@ -1,0 +1,9 @@
+<!--components/zUserInfoBtn/zUserInfoBtn.wxml-->
+<!-- 获取用户信息按钮，兼容 -->
+<button wx:if="{{!caniuseUserInfoProfile}}" class="btn" style="{{btnStyle}}" open-type='getUserInfo' bindgetuserinfo='getUserInfoCallBack'>
+  <slot></slot>
+</button>
+<button wx:else class="btn" style="{{btnStyle}}" bindtap="getUserInfoBtnNew">
+  <slot></slot>
+</button>
+

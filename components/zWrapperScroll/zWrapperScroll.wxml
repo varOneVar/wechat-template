@@ -1,0 +1,3 @@
+<!--components/zWrapperScroll/zWrapperScroll.wxml-->
+<!-- 布局，用scroll-view标签代替页面滚动 -->
+<text>components/zWrapperScroll/zWrapperScroll.wxml</text>

@@ -1,0 +1,66 @@
+.fade-in, 
+.zoom-in-center,
+.zoom-in-top,
+.zoom-in-bottom,
+.opacity-in {
+  animation-duration: 0.3s;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoom-in-center {
+  animation-name: zoomInCenter;
+}
+@keyframes zoomInCenter {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.zoom-in-top {
+  animation-name: zoomInTopBom;
+  transform-origin: center top;
+}
+.zoom-in-bottom {
+  animation-name: zoomInTopBom;
+  transform-origin: center bottom;
+}
+@keyframes zoomInTopBom {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.opacity-in {
+  animation-name: opacityIn;
+}
+@keyframes opacityIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
